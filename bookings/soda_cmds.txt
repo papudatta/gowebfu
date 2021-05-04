@@ -1,0 +1,17 @@
+go get github.com/gobuffalo/pop/...
+
+sudo cp /home/papudatta/go/bin/soda /usr/local/go/bin/
+soda generate fizz CreateUserTable
+soda generate fizz CreateReservationTable
+soda generate fizz CreateRoomsTable
+soda generate fizz CreateRestrictionsTable
+soda generate fizz CreateRoomRestrictionsTable
+soda generate fizz CreateFKForReservationsTable
+soda generate fizz CreateFKForRoomRestrictions
+soda generate fizz CreateUniqueIndexForUsersTable
+soda generate fizz CreateIndicesOnRoomRestrictions
+soda generate fizz AddFKAndIndicesToReservationTable
+soda generate fizz AddNotNullToReservationIDForRestrictions
+soda migrate
+soda migrate down
+soda reset
