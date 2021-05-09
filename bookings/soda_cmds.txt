@@ -12,6 +12,8 @@ soda generate fizz CreateUniqueIndexForUsersTable
 soda generate fizz CreateIndicesOnRoomRestrictions
 soda generate fizz AddFKAndIndicesToReservationTable
 soda generate fizz AddNotNullToReservationIDForRestrictions
+soda generate sql SeedRoomsTable
+soda generate sql SeedRestrictionsTable
 soda migrate
 soda migrate down
 soda reset
